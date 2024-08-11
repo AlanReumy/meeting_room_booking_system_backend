@@ -16,7 +16,6 @@ import { ConfigService } from '@nestjs/config';
           },
           database: 1,
         });
-        console.log(client);
         await client.connect();
         return client;
       },
